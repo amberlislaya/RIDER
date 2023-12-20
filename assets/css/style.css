@@ -302,7 +302,7 @@ year
 }
 
 .navbar {
-  background: var(--alice-blue-1);
+  background: var(--alice-blue-4);
   position: fixed;
   top: 70px;
   bottom: 0;
@@ -505,6 +505,8 @@ year
 .year {
 color: var(--alice-blue-1);
 border: 2px dashed hsla(204, 91%, 53%, 0.4);
+padding: 3px 12px;
+border-radius: var(--radius-14);
 }
 
 .featured-car-card .card-list {
