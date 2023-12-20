@@ -172,18 +172,25 @@ button, a { transition: var(--transition); }
 
 .section { padding-block: var(--section-padding); }
 
-.h1,
-.h2 {
+.h1
+ {
   color: var(--space-cadet);
   font-family: var(--ff-nunito);
   line-height: 1.4;
 }
 
-.h3 {
-  color: white;
+.h2 {
+  color: aliceblue;
   font-family: var(--ff-nunito);
   line-height: 1.4;
 }
+
+.h3 {
+  color: rgb(8, 8, 8);
+  font-family: var(--ff-nunito);
+  line-height: 1.4;
+}
+card-title
 
 .h1 {
   font-size: var(--fs-1);
@@ -436,15 +443,27 @@ button, a { transition: var(--transition); }
   margin-bottom: 15px;
 }
 
-.featured-car-card .card-title { width: calc(100% - 60px); }
+.featured-car-card  { width: calc(100% - 60px); }
 
-.featured-car-card .card-title > a {
+.featured-car-card > a {
   color: inherit;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.card-title { width: calc(100% - 60px); }
+
+.card-title {
+  color: white;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-title :hover { color: yellowgreen; }
 
 .featured-car-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
