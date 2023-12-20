@@ -94,7 +94,7 @@
 
 
 
-
+.contact-link
 
 /*-----------------------------------*\
   #RESET
@@ -331,7 +331,7 @@ year
   text-decoration: none;
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--carolina-blue); }
+.navbar-link:is(:hover, :focus) { color: yellowgreen; }
 
 .overlay {
   position: fixed;
@@ -953,7 +953,7 @@ border-radius: var(--radius-14);
   }
 
   .header-contact .contact-link {
-    color: var(--space-cadet);
+    color: white;
     font-family: var(--ff-nunito);
     font-size: var(--fs-5);
     line-height: 1.3;
@@ -962,7 +962,7 @@ border-radius: var(--radius-14);
   .header-contact .contact-link:is(:hover, :focus) { color: var(--carolina-blue); }
 
   .header-contact .contact-time {
-    color: var(--independence);
+    color: white;
     font-size: var(--fs-7);
   }
 
