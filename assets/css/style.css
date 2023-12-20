@@ -303,6 +303,7 @@ year
 
 .navbar {
   background: var(--alice-blue-4);
+  color: aliceblue;
   position: fixed;
   top: 70px;
   bottom: 0;
@@ -328,6 +329,7 @@ year
   font-size: var(--fs-6);
   padding-block: 5px;
   margin-bottom: 15px;
+  text-decoration: none;
 }
 
 .navbar-link:is(:hover, :focus) { color: var(--carolina-blue); }
