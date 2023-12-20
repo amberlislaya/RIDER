@@ -396,13 +396,14 @@ button, a { transition: var(--transition); }
   font-size: var(--fs-6);
 }
 
-.featured-car-link span { transition: var(--transition); }
+.featured-car-link span { transition: yellow; }
 
-.featured-car-link:is(:hover, :focus) span { color: var(--space-cadet); }
+.featured-car-link:is(:hover, :focus) span { color: yellowgreen; }
 
 .featured-car-link ion-icon {
   margin-top: 3px;
   transition: var(--transition);
+  color: white;
 }
 
 .featured-car-link:is(:hover, :focus) ion-icon { color: var(--carolina-blue); }
