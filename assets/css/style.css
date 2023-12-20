@@ -302,8 +302,8 @@ year
 }
 
 .navbar {
-  background: var(--alice-blue-4);
-  color: aliceblue;
+  /* background: var(--alice-blue-4); */
+  /* color: aliceblue; */
   position: fixed;
   top: 70px;
   bottom: 0;
