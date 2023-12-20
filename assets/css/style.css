@@ -161,7 +161,7 @@ body {
 
 
 
-
+hero-text
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -215,9 +215,6 @@ button, a { transition: var(--transition); }
   line-height: 1.4;
 }
 
-.p {
-  color: var(--alice-blue-4);
-}
 
 .h3 {
   color: var(--eerie-black);
@@ -241,7 +238,7 @@ button, a { transition: var(--transition); }
 
 
 
-
+year
 
 /*-----------------------------------*\
   #HEADER
@@ -368,7 +365,7 @@ button, a { transition: var(--transition); }
 }
 
 .hero-text {
-  color: var(--independence);
+  color: var(--alice-blue-4);
   line-height: 1.8;
   margin-bottom: 30px;
 }
@@ -496,13 +493,18 @@ button, a { transition: var(--transition); }
 
 .featured-car-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
-.featured-car-card .year {
+.featured-car-card {
   font-family: var(--ff-nunito);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
   padding: 3px 12px;
   border: 2px dashed hsla(204, 91%, 53%, 0.4);
   border-radius: var(--radius-14);
+}
+
+.year {
+color: var(--alice-blue-1);
+border: 2px dashed hsla(204, 91%, 53%, 0.4);
 }
 
 .featured-car-card .card-list {
