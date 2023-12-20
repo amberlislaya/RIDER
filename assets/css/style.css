@@ -302,8 +302,7 @@ year
 }
 
 .navbar {
-  /* background: var(--alice-blue-4); */
-  /* color: aliceblue; */
+  background: var(--alice-blue-1);
   position: fixed;
   top: 70px;
   bottom: 0;
@@ -324,7 +323,7 @@ year
 }
 
 .navbar-link {
-  color: var(--independence);
+  color: var(--alice-blue-4);
   font-family: var(--ff-nunito);
   font-size: var(--fs-6);
   padding-block: 5px;
