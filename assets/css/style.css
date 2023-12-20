@@ -56,9 +56,7 @@
   --radius-14: 14px;
   --radius-18: 18px;
 
-  /**
-   * shadow
-   */
+
 
   --shadow-1: 3px 3px 9px hsl(0, 0%, 100%);
   --shadow-2: 3px 3px 9px hsla(182, 83%, 53%, 0.658);
@@ -68,10 +66,6 @@
 
 
 
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -135,9 +129,7 @@ body {
 
 
 
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
+
 
 .container { padding-inline: 15px; }
 
@@ -208,12 +200,9 @@ button, a { transition: var(--transition); }
 .w-100 { width: 100%; }
 
 
-contact-link
+.hero-title
 
 
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 .header-contact { display: none; }
 
@@ -328,6 +317,7 @@ contact-link
 .hero-title {
   max-width: 20ch;
   margin-bottom: 15px;
+  color: white;
 }
 
 .hero-text {
@@ -375,13 +365,12 @@ contact-link
   text-transform: uppercase;
 }
 
+.logo {
+  color: white;
+}
 
 
 
-
-/*-----------------------------------*\
-  #FEATURED CAR
-\*-----------------------------------*/
 
 .featured-car .title-wrapper {
   display: flex;
@@ -536,11 +525,6 @@ contact-link
 
 
 
-
-/*-----------------------------------*\
-  #GET START
-\*-----------------------------------*/
-
 .get-start .section-title { margin-bottom: 25px; }
 
 .get-start-list {
@@ -629,9 +613,7 @@ contact-link
 
 
 
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
+
 
 .blog .section-title { margin-bottom: 30px; }
 
@@ -910,7 +892,7 @@ contact-link
     text-align: center;
   }
 
-  .header-contact .contact-link {
+  .header-contact {
     color: var(--space-cadet);
     font-family: var(--ff-nunito);
     font-size: var(--fs-5);
@@ -926,7 +908,7 @@ contact-link
 
   .header-contact .contact-link:is(:hover, :focus) { color: yellowgreen; }
 
-  .header-contact .contact-time {
+  .header-contact {
     color: var(--independence);
     font-size: var(--fs-7);
   }
