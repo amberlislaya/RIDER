@@ -20,28 +20,28 @@
    * colors
    */
 
-  --pale-purple-pantone: hsl(262, 84%, 71%);
-  --medium-sea-green: hsl(152, 92%, 38%);
-  --lavender-blush: hsl(336, 35%, 92%);
-  --carolina-blue: hsl(203, 100%, 7%);
-  --columbia-blue: hsl(204, 92%, 90%);
-  --alice-blue-1: hsl(223, 13%, 11%);
-  --alice-blue-2: hsl(216, 75%, 97%);
-  --alice-blue-3: hsl(216, 38%, 95%);
-  --alice-blue-4: hsl(217, 33%, 92%);
-  --independence: hsl(219, 21%, 39%);
-  --deep-cerise: hsl(350, 63%, 52%);
-  --eerie-black: hsl(210, 9%, 13%);
-  --space-cadet: hsl(240, 26%, 20%);
-  --blue-jeans: hsl(184, 65%, 51%);
-  --slate-blue: hsl(262, 60%, 57%);
-  --beau-blue: hsl(208, 86%, 92%);
-  --honey-dew: hsl(153, 52%, 80%);
-  --mimi-pink: hsl(329, 83%, 89%);
-  --red-salsa: hsl(0, 79%, 63%);
-  --sapphire: hsl(211, 100%, 35%);
-  --manatee: hsl(219, 14%, 60%);
-  --white: hsl(0, 0%, 100%);
+   --pale-purple-pantone: hsl(262, 84%, 71%);
+   --medium-sea-green: hsl(152, 92%, 38%);
+   --lavender-blush: hsl(336, 35%, 92%);
+   --carolina-blue: hsl(203, 100%, 7%);
+   --columbia-blue: hsl(204, 92%, 90%);
+   --alice-blue-1: hsl(223, 13%, 11%);
+   --alice-blue-2: hsl(216, 75%, 97%);
+   --alice-blue-3: hsl(216, 38%, 95%);
+   --alice-blue-4: hsl(217, 33%, 92%);
+   --independence: hsl(219, 21%, 39%);
+   --deep-cerise: hsl(350, 63%, 52%);
+   --eerie-black: hsl(210, 9%, 13%);
+   --space-cadet: hsl(240, 26%, 20%);
+   --blue-jeans: hsl(184, 65%, 51%);
+   --slate-blue: hsl(262, 60%, 57%);
+   --beau-blue: hsl(208, 86%, 92%);
+   --honey-dew: hsl(153, 52%, 80%);
+   --mimi-pink: hsl(329, 83%, 89%);
+   --red-salsa: hsl(0, 79%, 63%);
+   --sapphire: hsl(211, 100%, 35%);
+   --manatee: hsl(219, 14%, 60%);
+   --white: hsl(0, 0%, 100%);
 
   --gradient: linear-gradient(to top, var(--alice-blue-2), var(--alice-blue-3));
 
@@ -87,15 +87,18 @@
    * shadow
    */
 
-  --shadow-1: 3px 3px 9px hsla(0, 0%, 100%, 0.993);
-  --shadow-2: 3px 3px 9px hsl(180, 97%, 60%);
+  --shadow-1: 3px 3px 9px hsla(240, 14%, 69%, 0.2);
+  --shadow-2: 3px 3px 9px hsla(204, 92%, 59%, 0.3);
 
 }
 
 
-publish-date
-featured-car-link
 
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -138,7 +141,6 @@ html {
 
 body {
   background: var(--alice-blue-1);
-  color: var(--alice-blue-4);
   overflow-x: hidden;
 }
 
@@ -150,15 +152,15 @@ body {
 ::-webkit-scrollbar-track { background: var(--white); }
 
 ::-webkit-scrollbar-thumb {
-  background: hsla(186, 92%, 14%, 0.877);
+  background: hsla(219, 14%, 60%, 0.3);
   border: 2px solid var(--white);
 }
 
-::-webkit-scrollbar-thumb:hover { background: hsla(187, 86%, 27%, 0.5); }
+::-webkit-scrollbar-thumb:hover { background: hsla(219, 14%, 60%, 0.5); }
 
 
 
-hero-text
+
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -206,17 +208,11 @@ button, a { transition: var(--transition); }
 .section { padding-block: var(--section-padding); }
 
 .h1,
-.h2 {
-  color: var(--alice-blue-4);
+.h2,
+.h3 {
+  color: var(--space-cadet);
   font-family: var(--ff-nunito);
   line-height: 1.4;
-}
-
-
-.h3 {
-  color: var(--eerie-black);
-  font-family: var(--ff-nunito);
-  line-height: 1.4; 
 }
 
 .h1 {
@@ -235,7 +231,7 @@ button, a { transition: var(--transition); }
 
 
 
-year
+
 
 /*-----------------------------------*\
   #HEADER
@@ -320,15 +316,14 @@ year
 }
 
 .navbar-link {
-  color: var(--alice-blue-4);
+  color: var(--independence);
   font-family: var(--ff-nunito);
   font-size: var(--fs-6);
   padding-block: 5px;
   margin-bottom: 15px;
-  text-decoration: none;
 }
 
-.navbar-link:is(:hover, :focus) { color: yellowgreen; }
+.navbar-link:is(:hover, :focus) { color: var(--carolina-blue); }
 
 .overlay {
   position: fixed;
@@ -363,7 +358,7 @@ year
 }
 
 .hero-text {
-  color: var(--alice-blue-4);
+  color: var(--independence);
   line-height: 1.8;
   margin-bottom: 30px;
 }
@@ -428,20 +423,20 @@ year
   display: flex;
   align-items: center;
   gap: 5px;
-  color: white;
+  color: var(--independence);
   font-size: var(--fs-6);
 }
 
 .featured-car-link span { transition: var(--transition); }
 
-.featured-car-link:is(:hover, :focus) span { color: yellowgreen; }
+.featured-car-link:is(:hover, :focus) span { color: var(--space-cadet); }
 
 .featured-car-link ion-icon {
   margin-top: 3px;
   transition: var(--transition);
 }
 
-.featured-car-link:is(:hover, :focus) ion-icon { color: yellowgreen; }
+.featured-car-link:is(:hover, :focus) ion-icon { color: var(--carolina-blue); }
 
 .featured-car-list {
   display: grid;
@@ -491,20 +486,13 @@ year
 
 .featured-car-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
-.featured-car-card {
+.featured-car-card .year {
   font-family: var(--ff-nunito);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
   padding: 3px 12px;
   border: 2px dashed hsla(204, 91%, 53%, 0.4);
   border-radius: var(--radius-14);
-}
-
-.year {
-color: var(--alice-blue-1);
-border: 2px dashed hsla(204, 91%, 53%, 0.4);
-padding: 3px 12px;
-border-radius: var(--radius-14);
 }
 
 .featured-car-card .card-list {
@@ -709,7 +697,7 @@ border-radius: var(--radius-14);
 
 .blog-card .card-title > a { color: inherit; }
 
-.blog-card .card-title > a:is(:hover, :focus) { color: yellowgreen; }
+.blog-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
 .blog-card .card-meta {
   display: flex;
@@ -722,7 +710,7 @@ border-radius: var(--radius-14);
   align-items: center;
   gap: 5px;
   font-size: var(--fs-6);
-  color: white;
+  color: var(--independence);
 }
 
 .blog-card :is(.publish-date, .comments) ion-icon {
@@ -924,7 +912,7 @@ border-radius: var(--radius-14);
      * typography
      */
 
-    
+    --fs-1: 2.625rem;
 
   }
 
@@ -950,7 +938,7 @@ border-radius: var(--radius-14);
   }
 
   .header-contact .contact-link {
-    color: white;
+    color: var(--space-cadet);
     font-family: var(--ff-nunito);
     font-size: var(--fs-5);
     line-height: 1.3;
@@ -959,7 +947,7 @@ border-radius: var(--radius-14);
   .header-contact .contact-link:is(:hover, :focus) { color: var(--carolina-blue); }
 
   .header-contact .contact-time {
-    color: white;
+    color: var(--independence);
     font-size: var(--fs-7);
   }
 
@@ -1038,7 +1026,7 @@ border-radius: var(--radius-14);
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding-block: 20px;
+    padding-block: 30px;
     box-shadow: var(--shadow-1);
   }
 
@@ -1213,3 +1201,47 @@ border-radius: var(--radius-14);
   .footer-list:last-of-type { width: 33.33%; }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
