@@ -93,12 +93,9 @@
 }
 
 
+publish-date
+featured-car-link
 
-.contact-link
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -431,20 +428,20 @@ year
   display: flex;
   align-items: center;
   gap: 5px;
-  color: var(--independence);
+  color: white;
   font-size: var(--fs-6);
 }
 
 .featured-car-link span { transition: var(--transition); }
 
-.featured-car-link:is(:hover, :focus) span { color: var(--space-cadet); }
+.featured-car-link:is(:hover, :focus) span { color: yellowgreen; }
 
 .featured-car-link ion-icon {
   margin-top: 3px;
   transition: var(--transition);
 }
 
-.featured-car-link:is(:hover, :focus) ion-icon { color: var(--carolina-blue); }
+.featured-car-link:is(:hover, :focus) ion-icon { color: yellowgreen; }
 
 .featured-car-list {
   display: grid;
@@ -712,7 +709,7 @@ border-radius: var(--radius-14);
 
 .blog-card .card-title > a { color: inherit; }
 
-.blog-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
+.blog-card .card-title > a:is(:hover, :focus) { color: yellowgreen; }
 
 .blog-card .card-meta {
   display: flex;
@@ -725,7 +722,7 @@ border-radius: var(--radius-14);
   align-items: center;
   gap: 5px;
   font-size: var(--fs-6);
-  color: var(--independence);
+  color: white;
 }
 
 .blog-card :is(.publish-date, .comments) ion-icon {
@@ -927,7 +924,7 @@ border-radius: var(--radius-14);
      * typography
      */
 
-    --fs-1: 2.625rem;
+    
 
   }
 
