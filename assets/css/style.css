@@ -87,8 +87,8 @@
    * shadow
    */
 
-  --shadow-1: 3px 3px 9px hsla(0, 0%, 0%, 0.993);
-  --shadow-2: 3px 3px 9px hsl(0, 0%, 0%);
+  --shadow-1: 3px 3px 9px hsla(236, 100%, 19%, 0.993);
+  --shadow-2: 3px 3px 9px hsl(180, 81%, 41%);
 
 }
 
@@ -153,11 +153,11 @@ body {
 ::-webkit-scrollbar-track { background: var(--white); }
 
 ::-webkit-scrollbar-thumb {
-  background: hsla(219, 89%, 17%, 0.801);
+  background: hsla(186, 92%, 14%, 0.877);
   border: 2px solid var(--white);
 }
 
-::-webkit-scrollbar-thumb:hover { background: hsla(220, 31%, 63%, 0.5); }
+::-webkit-scrollbar-thumb:hover { background: hsla(187, 86%, 27%, 0.5); }
 
 
 
@@ -211,7 +211,7 @@ button, a { transition: var(--transition); }
 .h1,
 .h2,
 .h3 {
-  color: var(--space-cadet);
+  color: var(--alice-blue-4);
   font-family: var(--ff-nunito);
   line-height: 1.4;
 }
