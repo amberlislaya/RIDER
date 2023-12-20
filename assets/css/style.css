@@ -679,6 +679,7 @@ button, a { transition: var(--transition); }
 .blog-card :is(.publish-date, .comments) ion-icon {
   font-size: 15px;
   --ionicon-stroke-width: 50px;
+  color: white;
 }
 
 .blog .has-scrollbar {
