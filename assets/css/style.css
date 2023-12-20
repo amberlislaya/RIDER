@@ -87,8 +87,8 @@
    * shadow
    */
 
-  --shadow-1: 3px 3px 9px hsla(236, 100%, 19%, 0.993);
-  --shadow-2: 3px 3px 9px hsl(180, 81%, 41%);
+  --shadow-1: 3px 3px 9px hsla(0, 0%, 100%, 0.993);
+  --shadow-2: 3px 3px 9px hsl(180, 97%, 60%);
 
 }
 
@@ -141,7 +141,7 @@ html {
 
 body {
   background: var(--alice-blue-1);
-  color: var(--columbia-blue);
+  color: var(--alice-blue-4);
   overflow-x: hidden;
 }
 
@@ -209,11 +209,20 @@ button, a { transition: var(--transition); }
 .section { padding-block: var(--section-padding); }
 
 .h1,
-.h2,
-.h3 {
+.h2 {
   color: var(--alice-blue-4);
   font-family: var(--ff-nunito);
   line-height: 1.4;
+}
+
+.p {
+  color: var(--alice-blue-4);
+}
+
+.h3 {
+  color: var(--eerie-black);
+  font-family: var(--ff-nunito);
+  line-height: 1.4; 
 }
 
 .h1 {
