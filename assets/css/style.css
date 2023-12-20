@@ -141,6 +141,7 @@ html {
 
 body {
   background: var(--alice-blue-1);
+  color: var(--columbia-blue);
   overflow-x: hidden;
 }
 
